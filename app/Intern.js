@@ -1,18 +1,18 @@
 import Employee from "./Employee.js";
 
 export default class Engineer extends Employee {
-  github;
+  school;
 
-  constructor(name, id, email, github) {
+  constructor(name, id, email, school) {
     super(name, id, email);
-    this.github = github;
+    this.school = school;
   }
 
   getRole() {
-    return "Engineer";
+    return "Intern";
   }
 
-  getgithub() {
-    return this.github;
+  getschool() {
+    return this.school;
   }
 }
